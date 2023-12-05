@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 11vh;
+  width: 100%;
+  background-color: #3bd39a;
+  display: flex;
+  align-items: center; /* Yaxis */
+  justify-content: center;
+  gap: 300px;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav ul {
+  display: flex;
+  gap: 160px;
+}
+
+#nav ul li {
+  list-style: none;
+  margin: 35px;
+  font-size: 1.1em;
+}
+
+#nav a {
+  font-size: 20px;
+  font-weight: 550;
+  text-decoration: none;
+  color: #cbf0db;
+}
+
+#main {
+  position: relative;
+}
+
+#page1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cbf0db;
+}
+
+#page1 img {
+  height: 500px;
+  width: auto;
+  margin: 190px 80px;
+  border-radius: 100px;
+}
+
+.intro {
+  height: 84px;
+  width: 600px;
+  margin-top: -290px;
+  margin-right: 121px;
+  font-size: larger;
+  line-height: 2;
+  color: #000;
+}
+
+span {
+  color: #159566;
+}
+
+button{
+    padding: 15px;
+    color: #cbf0db;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #3BD39A;
+    border:none;
+    border-radius: 6px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #cbf0db;
+    color: #3BD39A;
+    border: 2px solid #3BD39A;
+    cursor: pointer;
+ 
+}
+
+button a {
+  text-decoration: none;
+  color: #cbf0db;
+}
+
+
+tr {
+  background-color: #3bd39a;
+  width: auto;
+  color: #000;
+}
+
+table,
+th,
+td {
+  border: 1px solid #cbf0db;
+}
+
+table {
+  width: 70%;
+  text-align: center;
+  margin-left: 250px;
+}
+
+th {
+  height: 40px;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+#page2 {
+  background-color: #cbf0db;
+  height: 60vh;
+  /* margin: auto; */
+}
+#page2 h3 {
+  margin-left: 370px;
+  margin-bottom: 20px;
+}
+
+#page3{
+    background-color: #cbf0db;
+    padding:20px 0 0 0;
+}
+
+#page3 h3 {
+    margin-left: 370px;
+    margin-bottom: -43px;
+    margin-top: 50px;
+  }
+.card-wrap{
+    height: 500px;
+    width: 80vw;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position:relative; */
+}
+
+#card{
+    width:350px;
+    height: 350px;
+    margin:15px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.card1{
+background-image: url(./Assests/card1.jpg);
+background-size: cover;
+object-fit: cover;
+object-position: right;
+}
+.card2{
+    background-image: url(./Assests/card2.jpg);
+    background-size: cover;
+    object-fit: cover;
+    object-position: right;
+}
+.card3{
+    background-image: url(./Assests/card3.jpg);
+    background-size: cover;
+    object-fit: cover;
+    object-position: right;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #3BD39A;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 160px;
+    opacity: 0;
+    transition: all ease 0.6s;
+  }
+  .overlay h4 {
+    color: #000;
+    font-size: 35px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  .overlay p {
+    color: #000;
+    font-size: 18px;
+  }
+  #card:hover .overlay {
+    opacity: 1;
+  }
+
+#card .icons{
+    visibility:hidden;
+}
+
+  #card:hover .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+  }
+
+  #card:hover .icons .icon{
+    background-color: #cbf0db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  #card .overlay .icons .icon i {
+    font-size: 1.5rem;
+    color: #159566;
+    margin: 0 1rem;
+  }
+  #card .overlay .icons .icon:hover {
+    background-color: #159566;
+  }
+  #card .overlay .icons .icon:hover i {
+    color: #159566;
+  }
+
+
+
+footer {
+  background-color: #3bd39a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
